@@ -1,2 +1,2 @@
 # dontcomplaintome.com
-A disappointing feedback tool. Not for the weak of mind/heart
+A disappointing feedback tool. Not for the faint-hearted, tough skin required.
