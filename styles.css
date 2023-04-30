@@ -16,6 +16,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+h3 {
+  font-size: var(--relative-font-size);
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 header {
   background-color: var(--primary-color);
