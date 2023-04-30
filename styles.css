@@ -55,7 +55,7 @@ textarea {
   font-size: var(--relative-font-size);
 }
 
-input[type="submit"] {
+button[type="submit"] {
   margin-top: 1em;
   padding: 0.5em 1em;
   border-radius: 0.25em;
@@ -67,7 +67,7 @@ input[type="submit"] {
   font-size: var(--relative-font-size);
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   background-color: var(--secondary-color);
 }
 
@@ -94,7 +94,7 @@ a:hover {
 @media screen and (min-width: 768px) {
   label,
   textarea,
-  input[type="submit"] {
+  button[type="submit"] {
     font-size: 44px;
   }
   textarea {
