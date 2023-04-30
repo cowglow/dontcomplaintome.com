@@ -1,4 +1,6 @@
 const form = document.querySelector("form");
+const textarea = document.querySelector("textarea");
+const submitBtn = document.querySelector("button[type='submit']");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -8,6 +10,10 @@ form.addEventListener("submit", (event) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      const complaintText = document.createElement("h3");
+      complaintText.textContent = data.response;
+      form.replaceChild(complaintText, textarea);
+      submitBtn.textContent = "Make a new complaint";
+      submitBtn.addEventListener("click", () => location.reload());
     });
 });
