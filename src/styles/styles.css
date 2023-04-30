@@ -1,0 +1,130 @@
+/*
+Ref: https://www.spellbrand.com/brand-archetypes/jester
+#590232
+#D90479
+
+#BF045B
+#8C0343
+#BF047E
+*/
+:root {
+  --background-color: #590232;
+  --primary-color: #bf045b;
+  --secondary-color: #ff008b;
+  --relative-font-size: calc(0.45rem + 1.85vw);
+  --textarea-font-size: calc(0.45rem + 1.33vw);
+  --padding: 1.85em;
+}
+
+html {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: ghostwhite;
+  max-width: 1080px;
+}
+
+header {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  text-align: justify;
+  text-justify: inter-word;
+  padding: var(--padding);
+  font-size: min(var(--relative-font-size), 2.3em);
+}
+
+main {
+  flex-grow: 1;
+  margin: auto;
+  display: flex;
+  padding-top: var(--padding);
+  width: 90%;
+}
+
+footer {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.slug {
+  font-size: var(--relative-font-size);
+  font-weight: normal;
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+form {
+  flex-grow: 1;
+  font-size: var(--relative-font-size);
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  border-radius: 0.25em;
+  border: 1px solid var(--secondary-color);
+  font-size: var(--textarea-font-size);
+  padding: 1em;
+}
+
+button[type="submit"] {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: var(--relative-font-size);
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 1092px) {
+  body {
+    border-left: thick solid var(--primary-color);
+    border-right: thick solid var(--primary-color);
+  }
+  header {
+    text-align: center;
+    padding: 0;
+  }
+  .slug {
+    font-size: 0.6em;
+  }
+  textarea {
+    font-size: 2rem;
+  }
+  button[type="submit"] {
+    font-size: 2rem;
+  }
+  footer {
+    flex-direction: unset;
+    justify-content: space-between;
+  }
+}
