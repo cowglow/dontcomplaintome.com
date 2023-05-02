@@ -5,7 +5,7 @@ const label = document.querySelector("label[for='complaint']");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  let randomNum = Math.floor(Math.random() * 6) + 1;
+  let randomNum = Math.floor(Math.random() * 9) + 1;
   const url = `/response/${randomNum}.json`;
 
   fetch(url)
