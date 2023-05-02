@@ -4,8 +4,13 @@
   "description": "A disappointing feedback tool.",
   "repository": "git@github.com:cowglow/dontcomplaintome.com.git",
   "author": "Philip Saa <cowglow@gmail.com>",
-  "license": "MIT",
+  "scripts": {
+    "create-response": "node scripts/create-reponse.js"
+  },
   "devDependencies": {
+    "@types/node": "^18.16.3",
     "prettier": "^2.8.8"
-  }
+  },
+  "license": "MIT",
+  "type": "module"
 }
