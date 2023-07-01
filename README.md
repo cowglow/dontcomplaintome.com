@@ -1,6 +1,9 @@
 # dontcomplaintome.com
 A disappointing feedback tool. Not for the faint-hearted, tough skin required.
 
+If you feel like filing a complaint, feel free to use out automated feedback. You can always appeal a decision to speak with a person. Visit [https://dontcomplaintome.com/](https://dontcomplaintome.com/) and fill your complaint. Remember to screenshot your complaint in the form prior to submitting it! 
+
+
 ## Introduction
 "Don't Complain To Me" is a simple feedback tool that generates humorous responses to complaints. 
 The tool was developed with the aim of providing a unique and fun way for people to deal with complaints.
